@@ -1,0 +1,59 @@
+/* Estilos para sección de objetivo */
+.tarjeta-objetivo {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 15px;
+    backdrop-filter: blur(8px);
+    margin: 1rem 0;
+}
+
+.proposito {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-left: 3px solid var(--color-acento);
+}
+
+.lista-objetivos {
+    list-style: none;
+    margin: 1.5rem 0;
+}
+
+.lista-objetivos li {
+    padding: 1rem;
+    margin: 1rem 0;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: var(--transicion);
+}
+
+.lista-objetivos li:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateX(10px);
+}
+
+.icono-objetivo {
+    color: var(--color-acento);
+    font-size: 1.2em;
+    min-width: 30px;
+}
+
+.objetivo-final {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: rgba(0, 113, 227, 0.1);
+    border-radius: 10px;
+    border: 1px solid var(--color-acento);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.objetivo-final i {
+    font-size: 1.5rem;
+    color: var(--color-acento);
+}

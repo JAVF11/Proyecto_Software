@@ -1,0 +1,27 @@
+/*Especial de Areas*/
+
+.grid-areas {
+    display: flex;
+    flex-wrap: nowrap; /* Evita que salten de línea */
+    overflow-x: auto; /* Agrega scroll horizontal si no caben */
+    gap: 2rem;
+    margin: 2rem 0;
+    padding-bottom: 1rem; /* Espacio para que no se corte el scroll */
+    scrollbar-color: #0071e3 rgba(0,0,0,0.1); /* Color opcional para scrollbar */
+}
+
+.categoria {
+    flex: 0 0 auto; /* Evita que se estiren */
+    width: 250px; /* Tamaño fijo para mantener diseño */
+    background: rgba(255,255,255,0.05);
+    padding: 1.5rem;
+    border-radius: 10px;
+    border-top: 3px solid var(--color-acento);
+}
+
+.lista-areas li {
+    margin: 1rem 0;
+    padding: 1rem;
+    background: rgba(0,113,227,0.05);
+    border-radius: 8px;
+}

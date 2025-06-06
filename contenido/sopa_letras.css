@@ -1,0 +1,33 @@
+/*Sopa de letras*/
+.contenedor-sopa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+    backdrop-filter: blur(6px);
+    margin: 2rem auto;
+    max-width: 1000px;
+    overflow-x: auto;
+}
+
+.contenedor-sopa img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+}
+
+.contenedor-sopa img:hover {
+    transform: scale(1.02);
+}
+
+.descripcion-sopa {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    color: var(--color-secundario);
+}

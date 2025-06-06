@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SWEBOK - Ingeniería de Software</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header id="portada">
+        <img class="log" src="imagenes/UNAM.png" alt="Logo SWEBOK">
+        <img class="logo" src="imagenes/Logo.png" alt="Logo UNAM">    
+        <img class="log" src="imagenes/Fi.png" alt="Logo UNAM">    
+        <nav>
+            <ul class="menu-principal">
+                <li><a href="#presentacion">Inicio</a></li>
+                <li><a href="#temario">Temario</a></li>
+                <li class="submenu">
+                    <a href="#">Desarrollo temático</a>
+                    <ul class="submenu-items">
+                        <li><a href="#objetivo">Objetivo</a></li>
+                        <li><a href="#introduccion">Introducción</a></li>
+                        <li><a href="#antecedentes">Antecedentes</a></li>
+                        <li><a href="#definiciones">Areas de Conocimiento</a></li>
+                    </ul>
+                </li>
+
+                <li class="submenu">
+                    <a href="#">Recursos</a>
+                    <ul class="submenu-items">
+                        <li><a href="#presentaciones">Presentaciones</a></li>
+                        <li><a href="#video">Video</a></li>
+                        <li><a href="#descargables">Descargables</a></li>
+                    </ul>
+                </li>
+
+                <li class="submenu">
+                    <a href="#">Autoevaluación</a>
+                    <ul class="submenu-items">
+                        <li><a href="#cuestionario">Cuestionario</a></li>
+                        <li><a href="#sopa_letras">Sopa de letras</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#bibliografia">Bibliografía</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+   <main class="contenido-principal" aria-live="polite">
+        <div id="contenido-dinamico">
+            <!-- Contenido cargado dinámicamente -->
+            <div class="carga-inicial">
+                <div class="loader"></div>
+                <p>Cargando contenido inicial...</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="info-footer">
+            <h3>Guía SWEBOK</h3>
+            <p>Proyecto Ingeniería de Software 2025-2</p>
+            <p>Facultad de Ingeniería, UNAM</p>
+        </div>
+        <div class="creditos">
+            <p>Gracias</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+/* Estilos para sección de descargas */
+.grid-descargas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.tarjeta-descarga {
+    background: rgba(255,255,255,0.08);
+    border-radius: 12px;
+    padding: 1.5rem;
+    display: flex;
+    gap: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.tarjeta-descarga:hover {
+    transform: translateY(-5px);
+    background: rgba(255,255,255,0.12);
+}
+
+.icono-tipo {
+    font-size: 2rem;
+    color: var(--color-acento);
+    min-width: 50px;
+}
+
+.contenido-descarga {
+    flex: 1;
+}
+
+.boton-descarga {
+    display: inline-block;
+    background: var(--color-acento);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-top: 1rem;
+    transition: filter 0.3s ease;
+}
+
+.boton-descarga:hover {
+    filter: brightness(1.1);
+    text-decoration: none;
+}
+
+.meta-datos {
+    font-size: 0.9rem;
+    color: var(--color-secundario);
+    margin: 0.5rem 0;
+    display: flex;
+    gap: 1rem;
+}
+
+.meta-datos span {
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    background: rgba(255,255,255,0.05);
+}

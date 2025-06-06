@@ -1,0 +1,68 @@
+/* Estilos para Bibliografía */
+.contenido-bibliografia {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.grupo-bibliografia {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background: rgba(255,255,255,0.05);
+    border-radius: 10px;
+}
+
+.lista-bibliografia {
+    list-style: none;
+    padding: 0;
+}
+
+.lista-bibliografia li {
+    margin: 1.5rem 0;
+    padding: 1rem;
+    background: rgba(255,255,255,0.03);
+    border-radius: 8px;
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    transition: var(--transicion);
+}
+
+.lista-bibliografia li:hover {
+    background: rgba(255,255,255,0.06);
+}
+
+.referencia {
+    flex: 1;
+}
+
+.autores {
+    color: var(--color-acento);
+    font-weight: 600;
+}
+
+.titulo {
+    font-style: italic;
+}
+
+.editorial {
+    color: var(--color-secundario);
+    font-size: 0.95em;
+}
+
+.recurso-digital {
+    color: var(--color-primario);
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+.recurso-digital:hover {
+    text-decoration: underline;
+    color: var(--color-acento);
+}
+
+.fa-quote-left, .fa-link, .fa-paperclip {
+    color: var(--color-acento);
+    margin-top: 0.3rem;
+}

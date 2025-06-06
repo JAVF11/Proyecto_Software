@@ -1,0 +1,149 @@
+
+/*Cuestionario*/
+
+/* No modificamos el fondo del body */
+/* Elimina cualquier background-color en body o ponlo transparente */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px 0;
+    color: #333;
+}
+
+/* Contenedor del cuestionario */
+.container {
+    max-width: 650px;
+    margin: 0 auto;
+    backdrop-filter: blur(30px) saturate(180%);
+    border: 1px solid rgba(255,255,255,0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.85);
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.07); /* sombra suave */
+    /* NO hay efecto hover que cambie fondo */
+}
+
+/* Título */
+h2 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 25px;
+    letter-spacing: 1.2px;
+}
+
+/* Cada pregunta */
+.question {
+    margin-bottom: 25px;
+}
+
+/* Texto de la pregunta */
+.question > p {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #34495e;
+}
+
+/* Opciones */
+.options label {
+    display: block;
+    align-items: center;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    backdrop-filter: blur(30px) saturate(180%);
+    border: 1px solid rgba(255,255,255,0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.85);
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    color: #2c3e50;
+    user-select: none;
+    border: 2px solid transparent;
+    /* No background change on hover */
+}
+
+
+.options input[type="radio"] {
+  margin-right: 10px; /* separa el radio del texto */
+  vertical-align: middle; /* que el radio quede alineado con el texto */
+}
+
+/* Estilo personalizado para el radio */
+.options input[type="radio"] + span {
+    height: 20px;
+    width: 20px;
+    border: 2.5px solid #3498db;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 12px;
+    position: relative;
+}
+
+/* Círculo relleno cuando está seleccionado */
+.options input[type="radio"]:checked + span {
+    background-color: #3498db;
+    box-shadow: 0 0 5px #3498dbaa;
+}
+
+/* Botón */
+.button {
+    display: block;
+    width: 180px;
+    margin: 30px auto 0 auto;
+    padding: 12px 0;
+    font-size: 1.1rem;
+    font-weight: 700;
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    border-radius: 35px;
+    cursor: pointer;
+    box-shadow: 0 5px 12px #2980b980;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button:hover {
+    background-color: #1c5980;
+    box-shadow: 0 7px 15px #1c598080;
+}
+
+/* Resultado */
+.result {
+    margin-top: 28px;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #27ae60;
+}
+
+/* Respuestas correctas */
+.correct-answer {
+    background-color: #27ae60 !important;
+    border-color: #27ae60 !important;
+    color: #19692c !important;
+    font-weight: 700;
+}
+
+/* Respuestas incorrectas */
+.incorrect-answer {
+    background-color: #c0392b !important;
+    border-color: #c0392b !important;
+    color: #7b1a1a !important;
+    font-weight: 700;
+}
+
+/* Opciones seleccionadas */
+.user-correct {
+    border-color: #27ae60 !important;
+}
+
+.user-incorrect {
+    border-color: #c0392b !important;
+}
+
+/* Para mantener cursor pointer */
+.options label span {
+    pointer-events: none;
+}
