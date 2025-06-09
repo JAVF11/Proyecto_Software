@@ -16,3 +16,20 @@
     align-items: center;
     gap: 1rem;
 }
+
+/* Solución solo con CSS usando el primer elemento h2 */
+.seccion-cargada .tarjeta-informativa {
+    position: relative;
+    padding-right: 100px; /* Espacio para la imagen */
+}
+
+.seccion-cargada .tarjeta-informativa::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 200px;
+    background: url('Libro.png') center/contain no-repeat;
+    border-radius: 8px;
+}

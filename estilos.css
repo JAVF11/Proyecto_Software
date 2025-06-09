@@ -10,6 +10,12 @@
     --transicion: all 0.3s ease-in-out;
 }
 
+/* Verifica contenedores padres */
+nav ul, nav li, .menu-principal, .submenu {
+    overflow: visible !important;
+    position: static !important;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -30,6 +36,8 @@
 
 /*Seccion del cuerpo*/
 body {
+    position: relative;
+    z-index: 1; /* Nuevo: establece contexto base */
     font-family: 'Inter', sans-serif;
     background: 
         linear-gradient(
@@ -58,6 +66,7 @@ body {
 }
 
 body::before {
+    z-index: 0;
     content: '';
     position: fixed;
     top: 0;
@@ -75,6 +84,7 @@ body::before {
 
 /* Capa de refuerzo de color */
 body::after {
+    z-index: -1;
     content: '';
     position: fixed;
     top: 0;
@@ -110,8 +120,9 @@ header#portada {
 
 nav {
     position: sticky;
-    top: 0;
     z-index: 1000;
+    overflow: visible; /* Permite que los submenús se muestran fuera */
+    isolation: isolate; /* Crea nuevo contexto de apilamiento */
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(3px) saturate(180%);
@@ -158,6 +169,8 @@ nav a.active {
 }
 
 main.contenido-principal {
+    position: relative;
+    z-index: 10; /* Menor que el nav (1000) */
     flex: 1;
     padding: 2rem;
     width: 90%;
@@ -195,6 +208,11 @@ main.contenido-principal {
 }
 
 .submenu-items {
+    border: 2px solid blue !important; /* Para ver su posición */
+    box-shadow: 0 0 30px blue !important;
+    z-index: 10000; /* Mayor que el nav */
+    transform: translateZ(0); /* Optimiza apilamiento */
+    will-change: transform; /* Mejora rendimiento */
     display: none;
     background-color: rgba(255, 255, 255, 0.55);
     position: absolute;
@@ -202,7 +220,7 @@ main.contenido-principal {
     list-style: none;
     top: 100%;
     left: 0;
-    z-index: 1000;
+    z-index: 9999;
     border-radius: 20px;
     backdrop-filter: blur(30px) saturate(180%);
 }

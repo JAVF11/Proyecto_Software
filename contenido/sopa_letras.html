@@ -1,12 +1,33 @@
 <!-- contenido/sopa_letras.html -->
-<section class="seccion-cargada" id="sopa-letras">
-    <h2><i class="fas fa-seedling"></i> Sopa de Letras</h2>
-
-    <div class="contenedor-sopa">
-        <img src="imagenes/sopa.png" alt="Sopa de Letras SWEBOK">
+ <section class="seccion-cargada">
+    <div class="seccion-cargada">
+    <div class="container">
+        <h2>Sopa de Letras - Áreas del SWEBOK</h2>
+        
+        <div class="instructions">
+            <p><strong>Instrucciones:</strong> Encuentra algunas de las 18 áreas del conocimiento SWEBOK en la sopa de letras.</p>
+            <p>Las palabras pueden estar en dirección: horizontal o vertical (en ambos sentidos).</p>
+        </div>
+        
+        <div class="word-search">
+            <div class="grid-container">
+                <table class="word-grid" id="wordGrid"></table>
+            </div>
+            
+            <div class="word-list-container">
+                <div class="word-list" id="wordList">
+                    <h3>Palabras a encontrar:</h3>
+                </div>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <button class="button" id="resetButton">Reiniciar juego</button>
+        </div>
+        
+        <div class="stats" id="stats">
+            Palabras encontradas: <span id="foundCount">0</span> de 15
+        </div>
     </div>
-
-    <p class="descripcion-sopa">
-        Busca los términos clave relacionados con la ingeniería de software y el SWEBOK.
-    </p>
+</div>
 </section>

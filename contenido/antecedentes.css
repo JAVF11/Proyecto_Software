@@ -19,6 +19,20 @@
     margin-bottom: 1rem;
 }
 
+.hito_colaboracion {
+    padding: 1.5rem;
+    background: rgba(255,255,255,0.05);
+    border-radius: 10px;
+    position: relative;
+    border-left: 3px solid var(--color-acento);
+}
+
+.hito_colaboracion i {
+    font-size: 1.8rem;
+    color: var(--color-acento);
+    margin-bottom: 1rem;
+}
+
 .grid-estandarizacion {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -80,3 +94,14 @@ li{
 h3{
     margin-bottom: 1rem;
 }
+
+.imagen-fondo {
+    width: 100%; /* ancho completo o el que necesites */
+    height: 300px; /* ajusta el alto según la imagen */
+    background-image: url('Antecedentes.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain; /* o cover, según quieras */
+    margin-top: 20px; /* espacio para separar de otros elementos */
+}
+

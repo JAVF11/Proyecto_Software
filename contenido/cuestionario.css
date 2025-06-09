@@ -147,3 +147,15 @@ h2 {
 .options label span {
     pointer-events: none;
 }
+
+.question.correct-border {
+    border: 2px solid #27ae60; /* verde */
+    box-shadow: 0 0 8px #27ae60aa;
+    border-radius: 10px;
+}
+
+.question.incorrect-border {
+    border: 2px solid #c0392b; /* rojo */
+    box-shadow: 0 0 8px #c0392baa;
+    border-radius: 10px;
+}

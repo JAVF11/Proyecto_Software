@@ -18,7 +18,6 @@
 
 .lista-caracteristicas {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1.5rem;
     margin: 2rem 0;
 }
@@ -56,4 +55,35 @@
     font-size: 2rem;
     color: var(--color-acento);
     flex-shrink: 0;
+}
+
+
+.imagen-fondo_1 {
+    width: 100%; /* ancho completo o el que necesites */
+    height: 300px; /* ajusta el alto según la imagen */
+    background-image: url('Desarrollo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain; /* o cover, según quieras */
+    margin-top: 20px; /* espacio para separar de otros elementos */
+}
+
+.imagen-fondo_2 {
+    width: 100%; /* ancho completo o el que necesites */
+    height: 300px; /* ajusta el alto según la imagen */
+    background-image: url('Mantenimiento.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain; /* o cover, según quieras */
+    margin-top: 20px; /* espacio para separar de otros elementos */
+}
+
+.imagen-fondo_3 {
+    width: 100%; /* ancho completo o el que necesites */
+    height: 300px; /* ajusta el alto según la imagen */
+    background-image: url('Ingenieria.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain; /* o cover, según quieras */
+    margin-top: 20px; /* espacio para separar de otros elementos */
 }

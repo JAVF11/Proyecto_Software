@@ -1,33 +1,117 @@
 /*Sopa de letras*/
-.contenedor-sopa {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: rgba(255, 255, 255, 0.08);
-    padding: 2rem;
-    border-radius: 15px;
-    box-shadow: 0 8px 32px rgba(0,0,0,0.2);
-    backdrop-filter: blur(6px);
-    margin: 2rem auto;
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.container {
     max-width: 1000px;
-    overflow-x: auto;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
-.contenedor-sopa img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
-    transition: transform 0.3s ease;
-}
-
-.contenedor-sopa img:hover {
-    transform: scale(1.02);
-}
-
-.descripcion-sopa {
+h2 {
     text-align: center;
-    margin-top: 1rem;
-    font-size: 1.1rem;
-    color: var(--color-secundario);
+    color: #007BFF;
+}
+.word-search {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.grid-container {
+    margin-right: 20px;
+}
+.word-grid {
+    border: 2px solid #333;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+.word-grid td {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    font-size: 18px;
+    cursor: pointer;
+    user-select: none;
+}
+.word-grid td.selected {
+    background-color: #b3d9ff;
+}
+.word-grid td.found {
+    background-color: #a6f3a6;
+}
+.word-list-container {
+    flex: 1;
+    min-width: 300px;
+}
+.word-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+.word-list h3 {
+    grid-column: 1 / -1;
+    color: #007BFF;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+    margin-top: 0;
+}
+.word-list div {
+    padding: 8px;
+    margin: 2px 0;
+    cursor: pointer;
+    font-size: 14px;
+    word-break: break-word;
+}
+.word-list div.found {
+    text-decoration: line-through;
+    color: #28a745;
+}
+.controls {
+    text-align: center;
+    margin: 20px 0;
+}
+.button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+    font-size: 16px;
+}
+.button:hover {
+    background-color: #0056b3;
+}
+.stats {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+.instructions {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border-left: 4px solid #007BFF;
+}
+@media (max-width: 768px) {
+    .word-search {
+        flex-direction: column;
+    }
+    .grid-container {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .word-list {
+        grid-template-columns: 1fr;
+    }
 }
